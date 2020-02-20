@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Monoton&display=swap');
+
+*{
+  font-size: 17px;
+}
+
+.card{
+  margin-top: 10px;
+}

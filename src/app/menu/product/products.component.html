@@ -1,0 +1,129 @@
+<div class="margin">
+<div class="container">
+    <div class="panel panel-primary">
+         <div class="panel-heading">
+            <div class="title-heading"> {{title}}</div>   <!––this is the data binding  img [src]- this is the property of Image this is the property binding ––>
+             <div class="search-container">
+                <form>
+                   <input type="text" placeholder="Enter products name" [(ngModel)]=" userText" class="Search-Box" name="search" />
+                   <div class="icon"></div>
+                </form>
+                <h1></h1> 
+                </div>
+         </div>
+             <div class="panel-body">
+                {{userText}}
+                     <div class="row">
+                      
+                         <div class="col-md-12">
+                             <h2>Filtered By:</h2>
+                        </div><br>
+                        <div class="btn-group">
+                        <button class="btn btn-success" (click) ="toggleGrid()"  >
+                            {{gridView?"Hide Grid":"Show Grid"}} </button>
+                       <!--
+                           <button class="btn btn-success" (click) ="toggleList()"  >
+                            {{listView?"Hide List":"Show List"}} </button>
+                        </div>
+                       --> 
+
+                         <div class="table-responsive" *ngIf="gridView">
+                            <table class="table"  >
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <button class="btn btn-success"
+                                            (click)="toggleButton1()"  >
+                                                {{showImage1?"Hide Image":"Show Image"}}</button>
+                                        </th>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                                Code
+                                            </th>
+                                        <th>
+                                                Date
+                                         </th>
+                                         <th>
+                                                Price
+                                        </th>
+                                        <th>Description</th>
+                                        <th>
+                                                Rating
+                                            </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor ="let prod of product | search : userText ">
+                                        <td><img [src]="prod.imageUrl"
+                                         [style.width.px]="imageWidth" 
+                                         *ngIf="showImage1"></td>
+                                         <td> <a [routerLink]="['/product',prod.productId]"> {{prod.productName | Myupper : 'lower'}} </a></td>
+                                         <td> {{prod.productCode  }} </td>
+                                         <td> {{prod.releaseDate | date : 'MM/dd/yyyy' }} </td>
+                                         <td [ngStyle]="{'background-color':prod.price<20 ? 'lightpink':'lightgreen'}"> {{prod.price | currency : 'INR'  }} </td>
+                                         <td> {{prod.description }} </td>
+                                         <td> <app-stars [rate] = "prod.starRating"> <!--  prod.strrating is the prent of rating this will pass the valut output-parent  to child -->
+                                             </app-stars> 
+                                         </td>
+                                
+                                        </tr>
+                                </tbody>
+                           </table>
+                     </div>
+                     </div>
+                     <!--    
+                          <div class="table-responsive" *ngIf="listView">
+                     <table  class="table table-bordered" >
+                        <thead>
+                            
+                            <tr>
+                                <th>
+                                    <button class="btn btn-success"
+                                   (click)="toggleButton2()" >
+                                    {{showImage2?"Hide image":"Show image"}}</button>
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                        Code
+                                    </th>
+                                <th>
+                                        Date
+                                 </th>
+                                 <th>
+                                        Price
+                                </th>
+                                <th>Description</th>
+                                <th>
+                                        Rating
+                                    </th>
+                                    </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor =" let prod of product    | search : userText  " >
+                                <td><img [src]="prod.imageUrl"
+                                    [style.width.px]="imageWidth" 
+                                    *ngIf="showImage2"></td>
+                                <td> <a [routerLink]="['/product',prod.productId]"> {{prod.productName | Myupper : 'lower'}} </a></td>
+                                <td> {{prod.productCode  }} </td>
+                                <td> {{prod.releaseDate | date : 'MM/dd/yyyy' }} </td>
+                                <td [ngStyle]="{'background-color':prod.price<20 ? 'lightpink':'lightgreen'}"> {{prod.price | currency : 'INR'  }} </td>
+                                <td> {{prod.description }} </td>
+                                <td> <app-stars [rate] = "prod.starRating"> prod.strrating is the prent of rating this will pass the valut output-parent  to child
+                                </app-stars> 
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                
+                </div>
+                         -->     
+                    
+                
+            </div>
+        </div>
+</div>
+</div>

@@ -1,0 +1,17 @@
+
+
+<div class="card" style="width:400px">
+    <div *ngFor="let path of img" > 
+        <img class="card-img-top" [src] ="path.imgUrl" alt="Card image" style="width:100%">
+        <p></p>
+    </div>
+   
+     <div class="card-body" *ngFor="let path of img">
+      <h4 class="card-title">{{path.name}}</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <button  (click)="getImage(ok)" class="btn btn-primary">See Profile</button>
+    </div>
+  </div>
+
+
+

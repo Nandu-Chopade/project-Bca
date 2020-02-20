@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+.backgroundDiv{
+  background-color: rgb(0, 0, 0,);
+  background-color: rgb(0, 0, 0,0.9); 
+  height:650px;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 450px;
+}
+ 
+.margin{
+  margin-top: 10px;
+}
+
+
+.main
+    {
+        text-align: center;
+        box-shadow: 10px orangered;
+        border:1px solid;
+        border-radius: 10px;
+        width: 400px;
+        margin:0px;
+        padding: 0px 40px 60px 50px;
+        background-color:white ;
+        height: 530px;
+        
+    }  
+
+
+.removeicon{
+       padding: 0px;
+       margin-left:325px ;
+       margin-top: 0px;
+      
+   }
+   
+   span.glyphicon {
+     font-size: 20px;
+     color:rgb(8, 1, 1);
+    
+   
+   }
+   
+ 
+    .glyphicon:hover,
+    .glyphicon:focus{
+     color: red;
+     cursor: pointer;
+     
+    }
+
+   .loginheader{
+       text-align: center;
+      color: palegoldenrod;
+      width: 100%;
+      padding: 1px;
+      margin: 20px 0;
+      box-sizing: border-box;
+      border-color:red;
+      background-color:orangered;
+      border-radius: 5px;
+   }
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px ;
+   
+  }
+  
+  .icon {
+    padding: 20px ;
+    min-width: 50px;
+    min-height: 40px;
+    size: 30px;
+
+  }
+  
+ .user {
+    background: url("icons8-user-30.png") no-repeat center;
+    background-position: left;
+  }
+
+
+  .passwords{
+    background: url("icons8-privacy-30.png") no-repeat center ;
+    background-position: left;
+  } 
+  .input-field {
+    width: 100%;
+    padding: 10px 30px 0px 12px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    
+  }
+
+
+  .input-field:focus{
+    outline: none;
+    box-shadow: 0px 0px 5p red;
+    border-color: #5AB0DB;
+}
+
+
+  .btn1 {
+      outline: none;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-color:red;
+    background-color:white;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+
+  .btn1:hover {
+    background-color:#DC143C;
+    outline: none;
+    color: white;
+
+} 
+.btn2{
+    width: 100%;
+    padding: 8px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-color:red;
+    background-color:white;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+  }
+  .btn2:hover {
+    background-color:blueviolet;
+    color: white;
+
+} 
+
+.center{
+    text-align: center;
+  
+}
+.center:hover{
+    border-bottom: none;
+}
+
+  @media only screen and (max-width: 600px){
+
+    .backgroundDiv{
+
+      height: 0px;
+
+    }
+
+    .main
+    {
+        float: left;
+        box-shadow: 10px orangered;
+        border:1px solid;
+        border-radius: 20px;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 10px;
+        background-color:white ;
+        height: 550x;
+    }  
+
+
+    .removeicon{
+        height: 50;
+        width: 50;
+        padding: 1px;
+        margin-left:200px ;
+    }
+ 
+
+  }
+
+  @media only screen and (max-width: 300px){
+
+
+     
+
+    .main
+    {
+        box-shadow: 10px orangered;
+        border:1px solid;
+        border-radius: 20px;
+        width: 200px;
+        margin:auto;
+        padding: 15px 50px 50px 50px;
+        background-color:white ;
+        height: 550x;
+    }  
+
+
+    .removeicon{
+        height: 50;
+        width: 50;
+        padding: 1px;
+        margin-left:100px ;
+    }
+ 
+
+  }
+
+
+
+
+
+
+
+
+

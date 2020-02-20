@@ -1,0 +1,59 @@
+ .row{
+     color: black;
+ }
+ .adust{
+      padding-bottom: 300px;
+ }
+ .SizeofContainer{
+     margin: 20px;
+    
+ }
+ .bg{
+     background: rgb(247, 237, 106);
+ }
+ .Profile{
+    margin: 20px 20px 20px 20px;
+   
+}
+.Name{
+     margin-left: 80px;
+     font-size: 18px;
+}
+.Education{
+    margin: 30px;
+    font-size: 18px;
+
+}   
+.fullForm { 
+     font-size: 12px;
+    }
+.skill {
+    margin: 30px;
+    font-size: 18px;  
+}
+.BOD {
+    margin: 90px;
+    font-size: 18px;  
+}
+.info{
+     margin-left: 180px;
+}
+li{
+    margin: 6px;
+}
+
+.box ,.two{
+    padding: 6.1px;
+    border-right: 1px solid ;
+    
+   
+}
+
+.Dp{
+    background-color: #30B9D9;
+}
+
+.Contact{
+    margin: 40px;
+    font-size: 18px;
+}
