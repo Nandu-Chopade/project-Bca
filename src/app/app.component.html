@@ -1,21 +1,23 @@
 
 <div class="topnav" > 
-  <ul> <!--     -->
   
+  <ul> <!--  https://cdn1.imggmi.com/uploads/2020/2/23/a3e0ca3d230788f6fdf7467cc58e7011-full.png    -->
+   <div class="logo"><img class="logo imo" src ="https://cdn1.imggmi.com/uploads/2020/2/23/302080e6b1c294ea135ebaa87d471a47-full.png"/></div>
         <li class="active "><a  [routerLink]="['product']" > Products</a></li>
         <div class="search-container">
-        <form>
-           <input type="text" placeholder="Enter products name" [(ngModel)]=" userText" class="Search-Box" name="search"/>
-           <div class="icon"></div>
-        </form>
-        </div>
+         <form>
+            <input type="text" placeholder="Enter products name" [(ngModel)]=" userText" class="Search-Box" name="search"/>
+            <div class="icon"></div>
+         </form>
+         </div>
     
         <li><a [routerLink]="['home']">Home</a></li>
         <li> <a [routerLink]="['order']">Order</a></li>
-        <li><a [routerLink]="['service']">Services</a></li>
+      <li><a [routerLink]="['service']">Services</a></li> 
         <li> <a [routerLink]="['about']">About</a></li>
-        <li><div class="topnav-right "> <a [routerLink]="['sign-up']">Sign Up</a></div></li>
-        <li ><div class="topnav-right "> <a class="active" [routerLink]="['login']" >Log In</a></div></li> 
+        <li><div class="topnav-right "> <a [routerLink]="['sign-up']">Sign Up</a></div></li> 
+        <li ><div> <a class="active" [routerLink]="['login']" >Log In</a></div></li> 
+        
      </ul>
  
 </div>

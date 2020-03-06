@@ -7,10 +7,22 @@
 	/*font-family: 'Istok Web', sans-serif;*/
 	font-family: 'Montserrat', sans-serif;
 }
+
+.imo{
+	height: 50px;
+}
 .topnav {
     overflow: hidden;
  	background-color:rgb(220, 20, 60);
 	background-color: rgb(220, 20, 60,10);
+	
+}
+
+.logo{
+
+	float: left; 
+	padding: none;
+	
 }
  .toggle{
 
@@ -21,19 +33,20 @@ i{
 }
 ul{
 	padding:0px;
+	
 }
 .topnav li {
-  float: left;
+ float: left;
+ padding: 15px;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  color:rgb(8, 0, 0);
+  color:rgb(37, 255, 226);
 }
 
    a{
@@ -46,8 +59,9 @@ ul{
 	background-position: 3px 6px;
 }
 
-.topnav .search-container {
+.topnav .search-container { 
 	float: left;
+	margin-bottom: 4px;
 	
   }
 .topnav .search-container .icon{
@@ -78,11 +92,10 @@ ul{
 
 .topnav input[ type=text]{
 	outline: none;
-	width: 350px;
 	box-sizing: border-box;
 	color:white;
 	padding: 6px 10px;
-	width: 500px;
+	width: 350px;
 	font-size: 17px;
 	background-color: rgb(0, 0, 0);
 	background-color: rgb(0, 0, 0 ,0.3);
@@ -103,7 +116,7 @@ ul{
   }
   
 
-  .topnav-right {
+  .topnav-right { 
 	float: right;
   }
 
@@ -114,6 +127,11 @@ ul{
 		display:none;
 	  }
 
+	  .logo{
+         display: none;
+		float: left; 
+		padding: none;
+	}
   .topnav li, .topnav input[type=text] .topnav .search-container button {	
     float:none;
     display: block;
@@ -132,7 +150,7 @@ ul{
 @media screen and (max-width: 600px) {
   
   .topnav.responsive .icon {
-    
+	position: absolute;
     right: 0;
     top: 0;
   }
